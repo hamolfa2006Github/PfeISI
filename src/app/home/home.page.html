@@ -1,20 +1,41 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title >
+      Société de Transfert depuis l'Aéroport
     </ion-title>
-  </ion-toolbar>
+  </ion-toolbar> 
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <div style="display: flex; justify-content: flex-end;">
+      <ion-button style="width: 20%;" (click)="versAuthentificationOuTransfertsActifs()">
+        <ion-icon name="enter-outline"></ion-icon>
+      </ion-button>
+    </div>
+    <ion-card-header>
+      <div class="ion-text-start textePlusGrand">Bienvenue chez TransfertAirport !</div>
+    </ion-card-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-card-content>
+      <p class="textePlusGrand">
+        Nous offrons des services de transfert depuis et vers l'aéroport pour rendre votre voyage plus facile et plus confortable.
+      </p>
+      <br/>
+      <p class="textePlusGrand">
+        Nos chauffeurs expérimentés vous accueilleront à l'aéroport avec un panneau nominatif et vous conduiront à votre destination en toute sécurité.
+      </p>
+      <br/>
+      <p class="textePlusGrand">
+        Réservez dès maintenant pour un transfert en toute tranquillité.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card style="text-align:center">
+    <ion-button (click)="versDemandeTransfert()" expand="full">Demander Transfert !</ion-button>
+  </ion-card>
 </ion-content>
+
+
+

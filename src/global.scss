@@ -24,3 +24,47 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+ion-toolbar {
+    --background:rgb(0, 0, 128);
+    --color: #FFFFFF;
+  }
+
+  .textePlusGrand{font-size:120% !important; text-align:justify;}
+  .textePlusPetit{font-weight:bold;}
+  .textePlusPetit2{font-size:80%; background-color: rgba(131, 245, 131, 0.778)}
+
+  /* Styles pour le bouton jaune */
+  ion-button {
+    --background: rgb(202, 173, 9);
+    --color: #ffffff;
+    --border-color: #ffc107;
+  }
+
+  .cache{display:none;}
+
+  ion-icon {
+    color: rgb(0, 0, 128); /* Remplacez "red" par la couleur de votre choix */
+  }
+
+  ion-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  /* styles.css (ou votre fichier de styles) */
+ion-infinite-scroll {
+  --infinite-scroll-loading-text: "Chargement en cours...";
+}
+
+  
+  
+  
+
+
+  
+  
+  
